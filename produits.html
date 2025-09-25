@@ -20,7 +20,7 @@
     <nav class="navbar scrolled">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo-text">CFM</div>
+                <img src="https://images.unsplash.com/photo-1560472354-9c47394bbd89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=60" alt="COMATRA FISH MARINE Logo" class="logo-image">
                 <div class="logo-subtitle">COMATRA FISH MARINE</div>
             </div>
             
@@ -42,7 +42,7 @@
     </nav>
 
     <!-- Hero Section pour page Produits -->
-    <section class="page-hero">
+    <section class="page-hero products-hero">
         <div class="container">
             <div class="page-hero-content">
                 <h1>Produits & Services</h1>
@@ -51,70 +51,216 @@
         </div>
     </section>
 
-    <!-- Section Produits principaux -->
-    <section class="products-main">
+    <!-- Section Poissons -->
+    <section class="fish-category">
         <div class="container">
-            <div class="product-categories">
-                <div class="product-card">
+            <div class="section-header">
+                <h2>🐟 Poissons d'Élevage & Sauvages</h2>
+                <p>Sélection premium de poissons frais issus de nos élevages durables et de pêche responsable</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="detailed-product-card">
                     <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
-                         alt="Fresh noble fish varieties" 
-                         data-testid="img-fish-products">
-                    <h3>Poissons nobles</h3>
-                    <p>Maigre, daurade, carangue, tilapia, silures de haute qualité</p>
-                    <ul>
-                        <li>• Tilapia d'élevage bio</li>
-                        <li>• Silures africains</li>
-                        <li>• Poissons marins frais</li>
-                        <li>• Daurade royale</li>
-                        <li>• Maigre de qualité</li>
-                    </ul>
-                    <div class="product-specs">
-                        <h4>Spécifications:</h4>
-                        <p><strong>Fraîcheur:</strong> Moins de 24h après capture/récolte</p>
-                        <p><strong>Conditionnement:</strong> Glace, sous vide disponible</p>
-                        <p><strong>Traçabilité:</strong> Complète du site à l'assiette</p>
+                         alt="Tilapia frais" data-testid="img-tilapia">
+                    <div class="product-content">
+                        <h3>Tilapia du Nil</h3>
+                        <p class="product-description">Poisson d'élevage bio aux saveurs délicates, riche en protéines et oméga-3</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Tailles:</strong> 300g - 800g
+                            </div>
+                            <div class="detail-item">
+                                <strong>Origine:</strong> Fermes aquacoles certifiées
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 2,500 FCFA/kg
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="product-card">
+                <div class="detailed-product-card">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
+                         alt="Daurade royale" data-testid="img-daurade">
+                    <div class="product-content">
+                        <h3>Daurade Royale</h3>
+                        <p class="product-description">Poisson noble de mer aux chairs fermes et savoureuses, pêche durable</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Tailles:</strong> 400g - 1,2kg
+                            </div>
+                            <div class="detail-item">
+                                <strong>Origine:</strong> Côtes ouest-africaines
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 4,000 FCFA/kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detailed-product-card">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
+                         alt="Silure africain" data-testid="img-silure">
+                    <div class="product-content">
+                        <h3>Silure Africain</h3>
+                        <p class="product-description">Poisson d'eau douce robuste, excellente source de protéines, élevage local</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Tailles:</strong> 500g - 2kg
+                            </div>
+                            <div class="detail-item">
+                                <strong>Origine:</strong> Élevages locaux contrôlés
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 2,000 FCFA/kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Crustacés -->
+    <section class="crustaceans-category">
+        <div class="container">
+            <div class="section-header">
+                <h2>🦐 Crustacés Premium</h2>
+                <p>Sélection de crustacés frais, calibrés selon les standards internationaux</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="detailed-product-card">
                     <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
-                         alt="Fresh shrimp and shellfish" 
-                         data-testid="img-seafood-products">
-                    <h3>Crustacés & Coquillages</h3>
-                    <p>Sélection premium de produits de la mer</p>
-                    <ul>
-                        <li>• Gambas fraîches</li>
-                        <li>• Langouste locale</li>
-                        <li>• Coquillages variés</li>
-                        <li>• Crevettes d'élevage</li>
-                        <li>• Crabes de mangrove</li>
-                    </ul>
-                    <div class="product-specs">
-                        <h4>Spécifications:</h4>
-                        <p><strong>Tailles:</strong> Calibrage selon standards internationaux</p>
-                        <p><strong>Qualité:</strong> Grade A - Export quality</p>
-                        <p><strong>Conservation:</strong> Chaîne du froid continue</p>
+                         alt="Crevettes fraîches" data-testid="img-crevettes">
+                    <div class="product-content">
+                        <h3>Crevettes Géantes</h3>
+                        <p class="product-description">Crevettes d'élevage de qualité export, chair ferme et goût authentique</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Calibres:</strong> 10/15, 15/20, 20/30 pièces/kg
+                            </div>
+                            <div class="detail-item">
+                                <strong>Présentation:</strong> Entières, décortiquées
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 6,500 FCFA/kg
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="product-card">
+                <div class="detailed-product-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
+                         alt="Langoustes" data-testid="img-langoustes">
+                    <div class="product-content">
+                        <h3>Langoustes Locales</h3>
+                        <p class="product-description">Langoustes fraîches capturées de manière durable dans nos eaux côtières</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Tailles:</strong> 300g - 800g pièce
+                            </div>
+                            <div class="detail-item">
+                                <strong>Origine:</strong> Côtes du Golfe de Guinée
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 12,000 FCFA/kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detailed-product-card">
+                    <img src="https://images.unsplash.com/photo-1582343592019-fbf69b0e5d08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
+                         alt="Crabes de mangrove" data-testid="img-crabes">
+                    <div class="product-content">
+                        <h3>Crabes de Mangrove</h3>
+                        <p class="product-description">Crabes sauvages des mangroves, chair délicate et riche en saveurs marines</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Tailles:</strong> Gros calibre, 150g - 300g
+                            </div>
+                            <div class="detail-item">
+                                <strong>Pêche:</strong> Traditionnelle et durable
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 3,500 FCFA/kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Fruits de Mer -->
+    <section class="seafood-category">
+        <div class="container">
+            <div class="section-header">
+                <h2>🐚 Fruits de Mer & Mollusques</h2>
+                <p>Variété de mollusques et coquillages frais pour une expérience gustative marine</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="detailed-product-card">
+                    <img src="https://images.unsplash.com/photo-1559239156-b4de1a98717c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
+                         alt="Huîtres fraîches" data-testid="img-huitres">
+                    <div class="product-content">
+                        <h3>Huîtres de Mangrove</h3>
+                        <p class="product-description">Huîtres sauvages cultivées dans nos mangroves protégées, iode et fraîcheur</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Calibres:</strong> N°2, N°3, N°4
+                            </div>
+                            <div class="detail-item">
+                                <strong>Conditionnement:</strong> Bourriches, plateaux
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 5,000 FCFA/douzaine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detailed-product-card">
+                    <img src="https://images.unsplash.com/photo-1614767513000-cb1609d7e494?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
+                         alt="Moules" data-testid="img-moules">
+                    <div class="product-content">
+                        <h3>Moules de Roche</h3>
+                        <p class="product-description">Moules locales aux saveurs concentrées, récoltées sur nos côtes rocheuses</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Tailles:</strong> Moyennes et grosses
+                            </div>
+                            <div class="detail-item">
+                                <strong>Récolte:</strong> Zones classées salubres
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 2,800 FCFA/kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detailed-product-card">
                     <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
-                         alt="Aquaculture equipment" 
-                         data-testid="img-equipment-products">
-                    <h3>Équipements & Aliments</h3>
-                    <p>Solutions complètes pour l'aquaculture</p>
-                    <ul>
-                        <li>• Aliments pour poissons</li>
-                        <li>• Équipements aquacoles</li>
-                        <li>• Systèmes de recirculation</li>
-                        <li>• Cages flottantes</li>
-                        <li>• Systèmes d'aération</li>
-                    </ul>
-                    <div class="product-specs">
-                        <h4>Spécifications:</h4>
-                        <p><strong>Certification:</strong> Normes européennes</p>
-                        <p><strong>Garantie:</strong> 2 ans minimum</p>
-                        <p><strong>Installation:</strong> Support technique inclus</p>
+                         alt="Coquilles Saint-Jacques" data-testid="img-coquilles">
+                    <div class="product-content">
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <p class="product-description">Coquilles Saint-Jacques locales, noix ferme et corail orange, qualité restaurant</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Présentation:</strong> Avec ou sans coque
+                            </div>
+                            <div class="detail-item">
+                                <strong>Qualité:</strong> Extra fraîche, Grade A
+                            </div>
+                            <div class="detail-item">
+                                <strong>Prix:</strong> À partir de 8,500 FCFA/kg
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,7 +390,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <div class="logo-text">CFM</div>
+                        <img src="https://images.unsplash.com/photo-1560472354-9c47394bbd89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=60" alt="COMATRA FISH MARINE Logo" class="logo-image">
                         <div class="logo-subtitle">COMATRA FISH MARINE</div>
                     </div>
                     <p>Leader en aquaculture durable et pêche responsable en Afrique de l'Ouest. Qualité, innovation et respect de l'environnement.</p>
