@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 40%, 98%);
+  --foreground: hsl(205, 100%, 21%);
+  --card: hsl(210, 40%, 96%);
+  --card-foreground: hsl(205, 100%, 21%);
+  --popover: hsl(210, 40%, 98%);
+  --popover-foreground: hsl(205, 100%, 21%);
+  --primary: hsl(199, 95%, 44%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(196, 85%, 73%);
+  --secondary-foreground: hsl(205, 100%, 21%);
+  --muted: hsl(196, 85%, 89%);
+  --muted-foreground: hsl(205, 75%, 35%);
+  --accent: hsl(190, 95%, 56%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(356, 90%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(196, 85%, 85%);
+  --input: hsl(196, 85%, 85%);
+  --ring: hsl(199, 95%, 44%);
+  --chart-1: hsl(199, 95%, 44%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(210, 40%, 96%);
+  --sidebar-foreground: hsl(205, 100%, 21%);
+  --sidebar-primary: hsl(199, 95%, 44%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(196, 85%, 89%);
+  --sidebar-accent-foreground: hsl(199, 95%, 44%);
+  --sidebar-border: hsl(196, 85%, 85%);
+  --sidebar-ring: hsl(199, 95%, 44%);
+  --radius: 0.5rem;
+  
+  /* COMATRA Custom Colors */
+  --cfm-dark-blue: hsl(208, 97%, 21%);
+  --cfm-medium-blue: hsl(205, 98%, 35%);
+  --cfm-bright-blue: hsl(199, 95%, 44%);
+  --cfm-cyan-blue: hsl(190, 95%, 56%);
+  --cfm-light-cyan: hsl(190, 77%, 76%);
+  --cfm-very-light-cyan: hsl(191, 85%, 89%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(200, 7%, 91%);
+  --card: hsl(228, 10%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(200, 7%, 91%);
+  --primary: hsl(199, 95%, 44%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(195, 15%, 95%);
+  --secondary-foreground: hsl(205, 100%, 21%);
+  --muted: hsl(0, 0%, 9%);
+  --muted-foreground: hsl(210, 3%, 46%);
+  --accent: hsl(206, 70%, 8%);
+  --accent-foreground: hsl(199, 95%, 44%);
+  --destructive: hsl(356, 90%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5%, 15%);
+  --input: hsl(208, 28%, 18%);
+  --ring: hsl(199, 95%, 44%);
+  --sidebar: hsl(228, 10%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(199, 95%, 44%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(206, 70%, 8%);
+  --sidebar-accent-foreground: hsl(199, 95%, 44%);
+  --sidebar-border: hsl(206, 16%, 26%);
+  --sidebar-ring: hsl(199, 95%, 44%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--cfm-dark-blue) 0%, var(--cfm-medium-blue) 25%, var(--cfm-bright-blue) 50%, var(--cfm-cyan-blue) 75%, var(--cfm-light-cyan) 100%);
+  }
+  
+  .section-alt {
+    background: linear-gradient(to right, var(--cfm-very-light-cyan) 0%, var(--cfm-light-cyan) 100%);
+  }
+  
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--cfm-bright-blue), var(--cfm-cyan-blue));
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--cfm-medium-blue), var(--cfm-bright-blue));
+    transform: translateY(-2px);
+  }
+  
+  .mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+  
+  .slider-container {
+    scroll-behavior: smooth;
+  }
+}
