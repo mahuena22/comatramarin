@@ -1,0 +1,73 @@
+Crée un site web complet pour l’entreprise COMATRA FISH MARINE, en utilisant **HTML, CSS, TailwindCSS et JavaScript** pour le design et les interactions. Le site doit inclure les pages et sections suivantes, avec le contenu fourni ci-dessous.
+
+Polices :
+- Titres : Montserrat
+- Paragraphes : Roboto
+
+Palette de couleurs pour le texte :
+- #01356d
+- #016ca5
+- #0396c7
+- #04bbdf
+- #90e0ef
+- #beedf4
+
+---
+
+### 1. Page d’accueil
+- **Slogan :** "Qualité, durabilité et innovation pour une alimentation halieutique saine."
+- **Image forte :** Visuel de poissons nobles, élevages en cage en mer et aquaculture à terre.
+- **Présentation rapide :** COMATRA FISH MARINE, acteur clé de la pêche durable, aquaculture innovante et distribution de produits aquatiques en Côte d’Ivoire, Bénin, Togo.
+- **Mise en avant des agences :** Localisations à Cotonou, Abidjan, Lomé.
+- **Produits phares :** Poissons nobles (tilapia, silures, poissons marins), coquillages, crustacés.
+- **CTA :** Boutons “Demander un devis” et “Nous contacter”.
+
+### 2. À propos
+- **Histoire :** Création en 2013 par Mr Roméo David, expert en pêche durable et aquaculture.
+- **Vision :** Assurer une alimentation de qualité via des produits halieutiques issus d’une pêche responsable et aquaculture durable.
+- **Pourquoi choisir CFM :** Expertise en pêche industrielle durable, réseaux fiables d’armateurs, techniques aquacoles innovantes à recirculation bio sécurisée.
+- **Chiffres clés :** Plus de 10 ans d’expérience, présence dans 3 pays, projets en aquaculture multi-sites, collaborations scientifiques internationales.
+
+### 3. Produits & Services
+- **Produits aquatiques :** Poissons nobles (maigre, daurade, carangue, tilapia, silures), crustacés (gambas, langouste), coquillages.
+- **Autres produits :** Aliment pour poissons, équipements aquacoles.
+- **Services annexes :** Logistique, conditionnement, livraison sous température contrôlée.
+- **Galerie :** Photos des élevages, infrastructures, produits frais, équipements.
+
+### 4. Nos agences
+- Présentation des agences : Cotonou, Abidjan, Lomé.
+- Détails pour chaque agence : adresse, contact, horaires, photo.
+- Carte interactive Google Maps pour visualiser les implantations.
+
+### 5. Partenaires & Références
+- Logos des partenaires scientifiques et industriels : universités de Côte d’Ivoire, Bénin, Togo, université de Montpellier, IRD Montpellier, INRA.
+- Témoignages éventuels de clients et partenaires.
+- Réseau politique, économique et scientifique consolidé garantissant fiabilité.
+
+### 6. Actualités / Blog (optionnel)
+- Articles sur l’aquaculture durable, marché des produits aquatiques en Afrique de l’Ouest.
+- Nouvelles sur les projets R&D et formations avec université de Montpellier.
+- Annonces de nouveaux partenariats, acquisition de sites, innovations.
+
+### 7. Contact
+- Formulaire de contact simple (nom, email, message).
+- Coordonnées : emails, téléphone, WhatsApp.
+- Liens vers réseaux sociaux professionnels.
+
+---
+
+**Design & UX :**
+- Site responsive (mobile / tablette / desktop) avec TailwindCSS.
+- Sections en full-width avec alternance de fonds clairs et légèrement colorés pour contraste.
+- CTA visibles et modernes, boutons arrondis avec hover effect en JavaScript si nécessaire.
+- Galerie et slider pour témoignages.
+- Footer sombre avec informations de contact et liens sociaux.
+
+**Interactions JavaScript :**
+- Slider pour témoignages.
+- Boutons et CTA avec animation hover.
+- Carte interactive pour agences.
+- Menu responsive pour mobile (burger menu).
+
+**Objectif :**
+- Reproduire exactement un site vitrine moderne pour COMATRA FISH MARINE, avec contenu fourni et respect total de la charte graphique (polices, couleurs).
