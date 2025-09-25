@@ -1,0 +1,16 @@
+{
+  "name": "comatra-fish-marine",
+  "version": "1.0.0",
+  "description": "COMATRA FISH MARINE - Site web pour aquaculture durable et produits halieutiques",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["aquaculture", "fish", "marine", "comatra"],
+  "author": "COMATRA FISH MARINE",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
