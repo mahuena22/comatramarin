@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - COMATRA FISH MARINE</title>
+    <meta name="description" content="Contactez COMATRA FISH MARINE pour vos projets d'aquaculture et vos besoins en produits aquatiques. Devis gratuit.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-text">CFM</div>
+                <div class="logo-subtitle">COMATRA FISH MARINE</div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="apropos.html" class="nav-link">À propos</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="index.html#agences" class="nav-link">Nos agences</a>
+                <a href="index.html#partenaires" class="nav-link">Partenaires</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" data-testid="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section pour page Contact -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Nous contacter</h1>
+                <p>Prenez contact avec nos équipes pour vos projets d'aquaculture et vos besoins en produits aquatiques</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact principale -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Demande de devis</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required data-testid="input-name" placeholder="Votre nom et prénom">
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required data-testid="input-email" placeholder="votre@email.com">
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" data-testid="input-phone" placeholder="+XXX XX XX XX XX">
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Entreprise</label>
+                            <input type="text" id="company" name="company" data-testid="input-company" placeholder="Nom de votre entreprise">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="productType">Type de produit *</label>
+                            <select id="productType" name="productType" required data-testid="select-product-type">
+                                <option value="">Sélectionnez un type de produit</option>
+                                <option value="poissons-nobles">Poissons nobles</option>
+                                <option value="crustaces-coquillages">Crustacés & Coquillages</option>
+                                <option value="equipements-aquacoles">Équipements aquacoles</option>
+                                <option value="services-logistiques">Services logistiques</option>
+                                <option value="conseil-installation">Conseil & Installation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                            <div class="error-message" id="productType-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quantity">Quantité estimée</label>
+                            <input type="text" id="quantity" name="quantity" data-testid="input-quantity" placeholder="Ex: 500kg, 100 unités...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required data-testid="textarea-message" 
+                                      placeholder="Décrivez votre projet, vos besoins spécifiques, délais souhaités..."></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit" data-testid="button-submit-contact">
+                            <span class="button-text">Envoyer la demande</span>
+                            <span class="button-loading">Envoi en cours...</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Informations de contact</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Siège social - Cotonou</h4>
+                            <p>Zone Portuaire de Cotonou</p>
+                            <p>Avenue Jean-Paul II</p>
+                            <p>Cotonou, Bénin</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p data-testid="phone-main">+229 XX XX XX XX</p>
+                            <p>+225 XX XX XX XX (Abidjan)</p>
+                            <p>+228 XX XX XX XX (Lomé)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contact@comatra-fish.com</p>
+                            <p>commercial@comatra-fish.com</p>
+                            <p>technique@comatra-fish.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horaires d'ouverture</h4>
+                            <p><strong>Lundi - Vendredi:</strong> 7h00 - 18h00</p>
+                            <p><strong>Samedi:</strong> 7h00 - 13h00</p>
+                            <p><strong>Dimanche:</strong> Fermé</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" data-testid="social-linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos agences -->
+    <section class="agencies-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos agences</h2>
+                <p>Présents dans 3 pays d'Afrique de l'Ouest pour vous servir au plus près</p>
+            </div>
+            
+            <div class="agencies-grid">
+                <div class="agency-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
+                         alt="Cotonou port area" 
+                         data-testid="img-agency-cotonou">
+                    <h3>Cotonou, Bénin</h3>
+                    <div class="agency-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Adresse:</strong><br>
+                                Zone Portuaire de Cotonou<br>
+                                Avenue Jean-Paul II
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-testid="phone-cotonou">+229 XX XX XX XX</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="agency-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
+                         alt="Abidjan port area" 
+                         data-testid="img-agency-abidjan">
+                    <h3>Abidjan, Côte d'Ivoire</h3>
+                    <div class="agency-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Adresse:</strong><br>
+                                Zone Industrielle de Vridi<br>
+                                Boulevard VGE
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-testid="phone-abidjan">+225 XX XX XX XX</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="agency-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
+                         alt="Lomé port area" 
+                         data-testid="img-agency-lomé">
+                    <h3>Lomé, Togo</h3>
+                    <div class="agency-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Adresse:</strong><br>
+                                Port Autonome de Lomé<br>
+                                Avenue du 24 janvier
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-testid="phone-lomé">+228 XX XX XX XX</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes</h2>
+                <p>Réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Quels sont vos délais de livraison ?</h4>
+                    <p>Nos délais de livraison varient selon la destination : 24h pour Cotonou, 48h pour Abidjan et Lomé, 72h pour les autres villes.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Proposez-vous des contrats d'approvisionnement ?</h4>
+                    <p>Oui, nous proposons des contrats d'approvisionnement régulier adaptés aux besoins des restaurants, grossistes et transformateurs.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Vos produits sont-ils certifiés ?</h4>
+                    <p>Tous nos produits respectent les normes internationales de qualité et de sécurité alimentaire. Nous fournissons les certificats sur demande.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Acceptez-vous les commandes en petite quantité ?</h4>
+                    <p>Oui, nous acceptons les commandes à partir de 10kg pour les produits frais et proposons des solutions adaptées aux petits restaurateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">CFM</div>
+                        <div class="logo-subtitle">COMATRA FISH MARINE</div>
+                    </div>
+                    <p>Leader en aquaculture durable et pêche responsable en Afrique de l'Ouest. Qualité, innovation et respect de l'environnement.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> contact@comatra-fish.com</p>
+                    <p><i class="fas fa-phone"></i> +229 XX XX XX XX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cotonou, Bénin</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 COMATRA FISH MARINE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -404,6 +404,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
+        // Gérer la transparence du navbar
+        if (scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        
+        // Gérer l'apparition/disparition du navbar
         if (scrollTop > lastScrollTop && scrollTop > 100) {
             // Scroll vers le bas
             navbar.style.transform = 'translateY(-100%)';
