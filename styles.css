@@ -1339,6 +1339,19 @@ section {
         padding: 15px;
         display: block;
         text-decoration: none;
+        color: var(--dark-gray);
+        font-family: var(--font-title);
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-menu a:hover {
+        color: var(--cfm-bright-blue);
+    }
+    
+    .nav-menu a.active {
+        color: var(--cfm-bright-blue);
+        font-weight: 600;
     }
 
     .nav-toggle {
