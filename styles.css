@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Specific background for Contact page */
 .page-hero.contact-hero {
-    background: linear-gradient(rgba(1, 53, 109, 0.8), rgba(1, 108, 165, 0.7)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080');
+    background: linear-gradient(rgba(1, 53, 109, 0.8), rgba(1, 108, 165, 0.7)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
