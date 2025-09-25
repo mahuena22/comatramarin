@@ -1,3 +1,40 @@
+/* Animations keyframes */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 12px 30px rgba(3, 150, 199, 0.4);
+    }
+    50% {
+        box-shadow: 0 12px 40px rgba(3, 150, 199, 0.7);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes bounce-rotate {
+    0%, 100% {
+        transform: translateY(-5px) scale(1.15) rotate(10deg);
+    }
+    50% {
+        transform: translateY(-8px) scale(1.18) rotate(15deg);
+    }
+}
+
+@keyframes social-float {
+    0%, 100% {
+        transform: translateY(-6px) scale(1.2) rotate(-8deg);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.25) rotate(-12deg);
+    }
+}
+
 /* Variables CSS pour les couleurs COMATRA */
 :root {
     --cfm-dark-blue: #01356d;
@@ -228,8 +265,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary:hover {
     background: linear-gradient(135deg, var(--cfm-medium-blue), var(--cfm-bright-blue));
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(3, 150, 199, 0.4);
+    animation: pulse-glow 2s infinite;
+}
+
+.btn-primary:active {
+    transform: translateY(-1px) scale(1.02);
 }
 
 .btn-secondary {
@@ -247,8 +289,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(144, 224, 239, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+    background-size: 200% 100%;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+    border-color: var(--cfm-light-cyan);
+    animation: shimmer 2s infinite;
+}
+
+.btn-secondary:active {
+    transform: translateY(-1px) scale(1.02);
 }
 
 .agency-locations {
@@ -1174,6 +1224,13 @@ section {
 
 .social-links a:hover {
     background: var(--cfm-medium-blue);
+    transform: translateY(-6px) scale(1.2) rotate(-8deg);
+    box-shadow: 0 15px 35px rgba(1, 108, 165, 0.5);
+    animation: social-float 2s ease-in-out infinite;
+}
+
+.social-links a:active {
+    transform: translateY(-3px) scale(1.1);
 }
 
 .business-hours {
@@ -1218,7 +1275,6 @@ section {
     height: 40px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1);
 }
 
 .footer-logo .logo-subtitle {
@@ -1281,6 +1337,13 @@ section {
 
 .footer-social a:hover {
     background: var(--cfm-light-cyan);
+    transform: translateY(-5px) scale(1.15) rotate(10deg);
+    box-shadow: 0 10px 25px rgba(4, 187, 223, 0.5);
+    animation: bounce-rotate 1.5s infinite;
+}
+
+.footer-social a:active {
+    transform: translateY(-2px) scale(1.08);
 }
 
 .copyright {
