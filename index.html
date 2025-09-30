@@ -1,352 +1,495 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMATRA FISH MARINE - Aquaculture durable et produits halieutiques</title>
-    <meta name="description" content="COMATRA FISH MARINE, leader en pêche durable et aquaculture innovante en Côte d'Ivoire, Bénin, Togo. Qualité, durabilité et innovation pour une alimentation halieutique saine.">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="COMATRA FISH MARINE - Aquaculture durable">
-    <meta property="og:description" content="Acteur clé de la pêche durable, aquaculture innovante et distribution de produits aquatiques en Afrique de l'Ouest.">
-    <meta property="og:type" content="website">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="image/logo.png" alt="COMATRA FISH MARINE Logo" class="logo-image">
-                <div class="logo-subtitle">COMATRA FISH MARINE</div>
-            </div>
-            
-            <div class="nav-menu">
-                <a href="#accueil" class="nav-link" data-testid="nav-accueil">Accueil</a>
-                <a href="apropos.html" class="nav-link" data-testid="nav-apropos">À propos</a>
-                <a href="produits.html" class="nav-link" data-testid="nav-produits">Produits</a>
-                <a href="#agences" class="nav-link" data-testid="nav-agences">Nos agences</a>
-                <a href="#partenaires" class="nav-link" data-testid="nav-partenaires">Partenaires</a>
-                <a href="contact.html" class="nav-link" data-testid="nav-contact">Contact</a>
-            </div>
-            
-            <div class="nav-toggle" data-testid="mobile-menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            COMATRA FISH MARINE - Aquaculture durable et produits halieutiques
+        </title>
+        <meta
+            name="description"
+            content="COMATRA FISH MARINE, leader en pêche durable et aquaculture innovante en Côte d'Ivoire, Bénin, Togo. Qualité, durabilité et innovation pour une alimentation halieutique saine." />
 
-    <!-- Section Accueil -->
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>COMATRA FISH MARINE</h1>
-                <h2>Qualité, durabilité et innovation pour une alimentation halieutique saine.</h2>
-                <p>Acteur clé de la pêche durable, aquaculture innovante et distribution de produits aquatiques en Côte d'Ivoire, Bénin, Togo.</p>
-                
-                <div class="hero-buttons">
-                    <button class="btn-primary" onclick="scrollToSection('contact')" data-testid="button-devis">
-                        Demander un devis
-                    </button>
-                    <button class="btn-secondary" onclick="scrollToSection('contact')" data-testid="button-contact">
-                        Nous contacter
-                    </button>
-                </div>
-                
-                <div class="agency-locations">
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Cotonou</span>
-                    </div>
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Abidjan</span>
-                    </div>
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Lomé</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Open Graph Tags -->
+        <meta
+            property="og:title"
+            content="COMATRA FISH MARINE - Aquaculture durable" />
+        <meta
+            property="og:description"
+            content="Acteur clé de la pêche durable, aquaculture innovante et distribution de produits aquatiques en Afrique de l'Ouest." />
+        <meta property="og:type" content="website" />
 
-    <!-- Section À propos -->
-    <section id="apropos" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>À propos de nous</h2>
-                <p>Plus de 10 ans d'expertise au service de l'aquaculture durable et de la pêche responsable</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                         alt="Modern aquaculture facility" 
-                         data-testid="img-about-facility">
-                </div>
-                
-                <div class="about-text">
-                    <h3>Notre Histoire</h3>
-                    <p>Créée en 2013 par Mr Roméo David, expert reconnu en pêche durable et aquaculture, COMATRA FISH MARINE s'est imposée comme un acteur majeur de l'industrie halieutique en Afrique de l'Ouest.</p>
-                    <p>Notre vision est d'assurer une alimentation de qualité via des produits halieutiques issus d'une pêche responsable et d'une aquaculture durable, respectueuse de l'environnement.</p>
-                    
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-number" data-testid="stat-experience">10+</div>
-                            <div class="stat-label">Années d'expérience</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number" data-testid="stat-countries">3</div>
-                            <div class="stat-label">Pays présents</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="expertise-cards">
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h4>Expertise technique</h4>
-                    <p>Techniques aquacoles innovantes à recirculation bio sécurisée et réseaux fiables d'armateurs.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h4>Innovation durable</h4>
-                    <p>Projets en aquaculture multi-sites avec collaborations scientifiques internationales.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>Réseau consolidé</h4>
-                    <p>Réseau politique, économique et scientifique consolidé garantissant fiabilité et qualité.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet" />
 
-    <!-- Section Produits & Services -->
-    <section id="produits" class="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Produits & Services</h2>
-                <p>Une gamme complète de produits aquatiques nobles et de services spécialisés</p>
-            </div>
-            
-            <div class="product-categories">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
-                         alt="Fresh noble fish varieties" 
-                         data-testid="img-fish-products">
-                    <h3>Poissons nobles</h3>
-                    <p>Maigre, daurade, carangue, tilapia, silures de haute qualité</p>
-                    <ul>
-                        <li>• Tilapia d'élevage bio</li>
-                        <li>• Silures africains</li>
-                        <li>• Poissons marins frais</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
-                         alt="Fresh shrimp and shellfish" 
-                         data-testid="img-seafood-products">
-                    <h3>Crustacés & Coquillages</h3>
-                    <p>Sélection premium de produits de la mer</p>
-                    <ul>
-                        <li>• Gambas fraîches</li>
-                        <li>• Langouste locale</li>
-                        <li>• Coquillages variés</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250" 
-                         alt="Aquaculture equipment" 
-                         data-testid="img-equipment-products">
-                    <h3>Équipements & Aliments</h3>
-                    <p>Solutions complètes pour l'aquaculture</p>
-                    <ul>
-                        <li>• Aliments pour poissons</li>
-                        <li>• Équipements aquacoles</li>
-                        <li>• Systèmes de recirculation</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="services">
-                <h3>Services annexes</h3>
-                <div class="services-grid">
-                    <div class="service">
-                        <div class="service-icon">
-                            <i class="fas fa-box"></i>
-                        </div>
-                        <h4>Logistique</h4>
-                        <p>Transport spécialisé et sécurisé pour produits frais</p>
-                    </div>
-                    
-                    <div class="service">
-                        <div class="service-icon">
-                            <i class="fas fa-package"></i>
-                        </div>
-                        <h4>Conditionnement</h4>
-                        <p>Emballage professionnel respectant la chaîne du froid</p>
-                    </div>
-                    
-                    <div class="service">
-                        <div class="service-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h4>Livraison</h4>
-                        <p>Livraison sous température contrôlée dans les délais</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery">
-                <h3>Galerie</h3>
-                <div class="gallery-slider">
-                    <div class="gallery-track">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Ferme aquacole moderne" 
-                             data-testid="gallery-img-0">
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Marché aux poissons frais" 
-                             data-testid="gallery-img-1">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Installation aquacole" 
-                             data-testid="gallery-img-2">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Élevage en cage marine" 
-                             data-testid="gallery-img-3">
-                        <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Poissons nobles frais" 
-                             data-testid="gallery-img-4">
-                        <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Crevettes et crustacés" 
-                             data-testid="gallery-img-5">
-                        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Saumon d'élevage" 
-                             data-testid="gallery-img-6">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Bassins d'aquaculture" 
-                             data-testid="gallery-img-7">
-                        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Pêche artisanale" 
-                             data-testid="gallery-img-8">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Technologie aquacole" 
-                             data-testid="gallery-img-9">
-                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Transport frigorifique" 
-                             data-testid="gallery-img-10">
-                        <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Coquillages premium" 
-                             data-testid="gallery-img-11">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1WZlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Laboratoire qualité" 
-                             data-testid="gallery-img-12">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Équipe de professionnels" 
-                             data-testid="gallery-img-13">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Innovation durable" 
-                             data-testid="gallery-img-14">
-                        <!-- Duplication des images pour effet infini -->
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Ferme aquacole moderne" 
-                             data-testid="gallery-img-15">
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Marché aux poissons frais" 
-                             data-testid="gallery-img-16">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Installation aquacole" 
-                             data-testid="gallery-img-17">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Élevage en cage marine" 
-                             data-testid="gallery-img-18">
-                        <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Poissons nobles frais" 
-                             data-testid="gallery-img-19">
-                        <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Crevettes et crustacés" 
-                             data-testid="gallery-img-20">
-                        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Saumon d'élevage" 
-                             data-testid="gallery-img-21">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Bassins d'aquaculture" 
-                             data-testid="gallery-img-22">
-                        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Pêche artisanale" 
-                             data-testid="gallery-img-23">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Technologie aquacole" 
-                             data-testid="gallery-img-24">
-                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Transport frigorifique" 
-                             data-testid="gallery-img-25">
-                        <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Coquillages premium" 
-                             data-testid="gallery-img-26">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1WZlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Laboratoire qualité" 
-                             data-testid="gallery-img-27">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Équipe de professionnels" 
-                             data-testid="gallery-img-28">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" 
-                             alt="Innovation durable" 
-                             data-testid="gallery-img-29">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Font Awesome for icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Section Nos agences -->
-    <section id="agences" class="agencies">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nos agences</h2>
-                <p>Présents dans 3 pays d'Afrique de l'Ouest pour vous servir au plus près</p>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img
+                        src="image/logo.png"
+                        alt="COMATRA FISH MARINE Logo"
+                        class="logo-image" />
+                    <div class="logo-subtitle">COMATRA FISH MARINE</div>
+                </div>
+
+                <div class="nav-menu">
+                    <a
+                        href="#accueil"
+                        class="nav-link"
+                        data-testid="nav-accueil"
+                        >Accueil</a
+                    >
+                    <a
+                        href="apropos.html"
+                        class="nav-link"
+                        data-testid="nav-apropos"
+                        >À propos</a
+                    >
+                    <a
+                        href="produits.html"
+                        class="nav-link"
+                        data-testid="nav-produits"
+                        >Produits</a
+                    >
+                    <a
+                        href="#agences"
+                        class="nav-link"
+                        data-testid="nav-agences"
+                        >Nos agences</a
+                    >
+                    <a
+                        href="#partenaires"
+                        class="nav-link"
+                        data-testid="nav-partenaires"
+                        >Partenaires</a
+                    >
+                    <a
+                        href="contact.html"
+                        class="nav-link"
+                        data-testid="nav-contact"
+                        >Contact</a
+                    >
+                </div>
+
+                <div class="nav-toggle" data-testid="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-            
-            <div class="agencies-grid">
-                <div class="agency-card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
-                         alt="Cotonou port area" 
-                         data-testid="img-agency-cotonou">
+        </nav>
+
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>COMATRA FISH MARINE</h1>
+                    <h2>
+                        Qualité, durabilité et innovation pour une alimentation
+                        halieutique saine.
+                    </h2>
+                    <p>
+                        Acteur clé de la pêche durable, aquaculture innovante et
+                        distribution de produits aquatiques en Côte d'Ivoire,
+                        Bénin, Togo.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button
+                            class="btn-primary"
+                            onclick="scrollToSection('contact')"
+                            data-testid="button-devis">
+                            Demander un devis
+                        </button>
+                        <button
+                            class="btn-secondary"
+                            onclick="scrollToSection('contact')"
+                            data-testid="button-contact">
+                            Nous contacter
+                        </button>
+                    </div>
+
+                    <div class="agency-locations">
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cotonou</span>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Abidjan</span>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lomé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="apropos" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>À propos de nous</h2>
+                    <p>
+                        Plus de 10 ans d'expertise au service de l'aquaculture
+                        durable et de la pêche responsable
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                            alt="Modern aquaculture facility"
+                            data-testid="img-about-facility" />
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Notre Histoire</h3>
+                        <p>
+                            Créée en 2013 par Mr Roméo David, expert reconnu en
+                            pêche durable et aquaculture, COMATRA FISH MARINE
+                            s'est imposée comme un acteur majeur de l'industrie
+                            halieutique en Afrique de l'Ouest.
+                        </p>
+                        <p>
+                            Notre vision est d'assurer une alimentation de
+                            qualité via des produits halieutiques issus d'une
+                            pêche responsable et d'une aquaculture durable,
+                            respectueuse de l'environnement.
+                        </p>
+
+                        <div class="stats">
+                            <div class="stat">
+                                <div
+                                    class="stat-number"
+                                    data-testid="stat-experience">
+                                    10+
+                                </div>
+                                <div class="stat-label">
+                                    Années d'expérience
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div
+                                    class="stat-number"
+                                    data-testid="stat-countries">
+                                    3
+                                </div>
+                                <div class="stat-label">Pays présents</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Expertise technique</h4>
+                        <p>
+                            Techniques aquacoles innovantes à recirculation bio
+                            sécurisée et réseaux fiables d'armateurs.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Innovation durable</h4>
+                        <p>
+                            Projets en aquaculture multi-sites avec
+                            collaborations scientifiques internationales.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Réseau consolidé</h4>
+                        <p>
+                            Réseau politique, économique et scientifique
+                            consolidé garantissant fiabilité et qualité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Produits & Services -->
+        <section id="produits" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Produits & Services</h2>
+                    <p>
+                        Une gamme complète de produits aquatiques nobles et de
+                        services spécialisés
+                    </p>
+                </div>
+
+                <div class="product-categories">
+                    <div class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250"
+                            alt="Fresh noble fish varieties"
+                            data-testid="img-fish-products" />
+                        <h3>Poissons nobles</h3>
+                        <p>
+                            Maigre, daurade, carangue, tilapia, silures de haute
+                            qualité
+                        </p>
+                        <ul>
+                            <li>• Tilapia d'élevage bio</li>
+                            <li>• Silures africains</li>
+                            <li>• Poissons marins frais</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250"
+                            alt="Fresh shrimp and shellfish"
+                            data-testid="img-seafood-products" />
+                        <h3>Crustacés & Coquillages</h3>
+                        <p>Sélection premium de produits de la mer</p>
+                        <ul>
+                            <li>• Gambas fraîches</li>
+                            <li>• Langouste locale</li>
+                            <li>• Coquillages variés</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250"
+                            alt="Aquaculture equipment"
+                            data-testid="img-equipment-products" />
+                        <h3>Équipements & Aliments</h3>
+                        <p>Solutions complètes pour l'aquaculture</p>
+                        <ul>
+                            <li>• Aliments pour poissons</li>
+                            <li>• Équipements aquacoles</li>
+                            <li>• Systèmes de recirculation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <h3>Services annexes</h3>
+                    <div class="services-grid">
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h4>Logistique</h4>
+                            <p>
+                                Transport spécialisé et sécurisé pour produits
+                                frais
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-package"></i>
+                            </div>
+                            <h4>Conditionnement</h4>
+                            <p>
+                                Emballage professionnel respectant la chaîne du
+                                froid
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Livraison</h4>
+                            <p>
+                                Livraison sous température contrôlée dans les
+                                délais
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <h3>Galerie</h3>
+                    <div class="gallery-slider">
+                        <div class="gallery-track">
+                            <img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Ferme aquacole moderne"
+                                data-testid="gallery-img-0" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Marché aux poissons frais"
+                                data-testid="gallery-img-1" />
+                            <img
+                                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Installation aquacole"
+                                data-testid="gallery-img-2" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Élevage en cage marine"
+                                data-testid="gallery-img-3" />
+                            <img
+                                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Poissons nobles frais"
+                                data-testid="gallery-img-4" />
+                            <img
+                                src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Crevettes et crustacés"
+                                data-testid="gallery-img-5" />
+                            <img
+                                src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Saumon d'élevage"
+                                data-testid="gallery-img-6" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Bassins d'aquaculture"
+                                data-testid="gallery-img-7" />
+                            <img
+                                src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Pêche artisanale"
+                                data-testid="gallery-img-8" />
+                            <img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Technologie aquacole"
+                                data-testid="gallery-img-9" />
+                            <img
+                                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Transport frigorifique"
+                                data-testid="gallery-img-10" />
+                            <img
+                                src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Coquillages premium"
+                                data-testid="gallery-img-11" />
+                            <img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1WZlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Laboratoire qualité"
+                                data-testid="gallery-img-12" />
+                            <img
+                                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Équipe de professionnels"
+                                data-testid="gallery-img-13" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Innovation durable"
+                                data-testid="gallery-img-14" />
+                            <!-- Duplication des images pour effet infini -->
+                            <img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Ferme aquacole moderne"
+                                data-testid="gallery-img-15" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Marché aux poissons frais"
+                                data-testid="gallery-img-16" />
+                            <img
+                                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Installation aquacole"
+                                data-testid="gallery-img-17" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Élevage en cage marine"
+                                data-testid="gallery-img-18" />
+                            <img
+                                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Poissons nobles frais"
+                                data-testid="gallery-img-19" />
+                            <img
+                                src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Crevettes et crustacés"
+                                data-testid="gallery-img-20" />
+                            <img
+                                src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Saumon d'élevage"
+                                data-testid="gallery-img-21" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Bassins d'aquaculture"
+                                data-testid="gallery-img-22" />
+                            <img
+                                src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Pêche artisanale"
+                                data-testid="gallery-img-23" />
+                            <img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Technologie aquacole"
+                                data-testid="gallery-img-24" />
+                            <img
+                                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Transport frigorifique"
+                                data-testid="gallery-img-25" />
+                            <img
+                                src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Coquillages premium"
+                                data-testid="gallery-img-26" />
+                            <img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1WZlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Laboratoire qualité"
+                                data-testid="gallery-img-27" />
+                            <img
+                                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Équipe de professionnels"
+                                data-testid="gallery-img-28" />
+                            <img
+                                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200"
+                                alt="Innovation durable"
+                                data-testid="gallery-img-29" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nos agences -->
+        <section id="agences" class="agencies">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos agences</h2>
+                    <p>
+                        Présents dans 3 pays d'Afrique de l'Ouest pour vous
+                        servir au plus près
+                    </p>
+                </div>
+                <div class="agency1-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
+                        alt="Cotonou port area"
+                        data-testid="img-agency-cotonou" />
                     <h3>Cotonou, Bénin</h3>
                     <div class="agency-info">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <strong>Adresse:</strong><br>
-                                Zone Portuaire de Cotonou<br>
+                                <strong>Adresse:</strong><br />
+                                Zone Portuaire de Cotonou<br />
                                 Avenue Jean-Paul II
                             </div>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
-                            <span data-testid="phone-cotonou">+229 XX XX XX XX</span>
+                            <span data-testid="phone-cotonou"
+                                >+229 XX XX XX XX</span
+                            >
                         </div>
                         <div class="info-item">
                             <i class="fas fa-clock"></i>
@@ -354,317 +497,554 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="agency-card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
-                         alt="Abidjan port area" 
-                         data-testid="img-agency-abidjan">
-                    <h3>Abidjan, Côte d'Ivoire</h3>
-                    <div class="agency-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Adresse:</strong><br>
-                                Zone Industrielle de Vridi<br>
-                                Boulevard VGE
+                <div class="agencies-grid">
+                    <div class="agency-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
+                            alt="Cotonou port area"
+                            data-testid="img-agency-cotonou" />
+                        <h3>Cotonou, Bénin</h3>
+                        <div class="agency-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Adresse:</strong><br />
+                                    Zone Portuaire de Cotonou<br />
+                                    Avenue Jean-Paul II
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span data-testid="phone-cotonou"
+                                    >+229 XX XX XX XX</span
+                                >
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span data-testid="phone-abidjan">+225 XX XX XX XX</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
-                        </div>
                     </div>
-                </div>
-                
-                <div class="agency-card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
-                         alt="Lomé port area" 
-                         data-testid="img-agency-lomé">
-                    <h3>Lomé, Togo</h3>
-                    <div class="agency-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Adresse:</strong><br>
-                                Port Autonome de Lomé<br>
-                                Avenue du 24 janvier
+
+                    <div class="agency-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
+                            alt="Abidjan port area"
+                            data-testid="img-agency-abidjan" />
+                        <h3>Abidjan, Côte d'Ivoire</h3>
+                        <div class="agency-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Adresse:</strong><br />
+                                    Zone Industrielle de Vridi<br />
+                                    Boulevard VGE
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span data-testid="phone-abidjan"
+                                    >+225 XX XX XX XX</span
+                                >
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span data-testid="phone-lomé">+228 XX XX XX XX</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
-                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="map-section">
-                <h3>Nos implantations</h3>
-                <div class="map-container">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Carte interactive Google Maps</p>
-                        <small>Visualisez nos 3 agences en Afrique de l'Ouest</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section Partenaires & Références -->
-    <section id="partenaires" class="partners">
-        <div class="container">
-            <div class="section-header">
-                <h2>Partenaires & Références</h2>
-                <p>Un réseau scientifique et industriel consolidé pour garantir notre excellence</p>
-            </div>
-            
-            <div class="partners-section">
-                <h3>Nos partenaires scientifiques</h3>
-                <div class="partners-grid">
-                    <div class="partner-logo" data-testid="partner-0">Université de Côte d'Ivoire</div>
-                    <div class="partner-logo" data-testid="partner-1">Université du Bénin</div>
-                    <div class="partner-logo" data-testid="partner-2">Université du Togo</div>
-                    <div class="partner-logo" data-testid="partner-3">Université de Montpellier</div>
-                    <div class="partner-logo" data-testid="partner-4">IRD Montpellier</div>
-                    <div class="partner-logo" data-testid="partner-5">INRA</div>
-                </div>
-            </div>
-            
-            <div class="testimonials">
-                <div class="testimonial">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4 data-testid="testimonial-name-0">Dr. Pierre Kouassi</h4>
-                            <p data-testid="testimonial-title-0">Université de Montpellier</p>
+                    <div class="agency-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
+                            alt="Lomé port area"
+                            data-testid="img-agency-lomé" />
+                        <h3>Lomé, Togo</h3>
+                        <div class="agency-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Adresse:</strong><br />
+                                    Port Autonome de Lomé<br />
+                                    Avenue du 24 janvier
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span data-testid="phone-lomé"
+                                    >+228 XX XX XX XX</span
+                                >
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
+                            </div>
                         </div>
                     </div>
-                    <p data-testid="testimonial-content-0">"COMATRA FISH MARINE démontre une expertise remarquable en aquaculture durable. Leur approche scientifique rigoureuse et leur engagement environnemental en font un partenaire de choix pour nos projets de recherche."</p>
                 </div>
-                
-                <div class="testimonial">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4 data-testid="testimonial-name-1">Marie Adjovi</h4>
-                            <p data-testid="testimonial-title-1">Directrice - Restaurants Neptune</p>
-                        </div>
-                    </div>
-                    <p data-testid="testimonial-content-1">"La qualité des produits CFM est exceptionnelle. Leurs poissons nobles et crustacés répondent parfaitement aux exigences de notre clientèle haut de gamme. Un service logistique impeccable!"</p>
-                </div>
-            </div>
-            
-            <div class="achievements">
-                <div class="achievement">
-                    <div class="achievement-number" data-testid="achievement-value-0">15+</div>
-                    <div class="achievement-label" data-testid="achievement-label-0">Partenaires scientifiques</div>
-                </div>
-                <div class="achievement">
-                    <div class="achievement-number" data-testid="achievement-value-1">50+</div>
-                    <div class="achievement-label" data-testid="achievement-label-1">Clients professionnels</div>
-                </div>
-                <div class="achievement">
-                    <div class="achievement-number" data-testid="achievement-value-2">5</div>
-                    <div class="achievement-label" data-testid="achievement-label-2">Sites aquacoles</div>
-                </div>
-                <div class="achievement">
-                    <div class="achievement-number" data-testid="achievement-value-3">100%</div>
-                    <div class="achievement-label" data-testid="achievement-label-3">Qualité garantie</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nous contacter</h2>
-                <p>Prenez contact avec nos équipes pour vos projets d'aquaculture et vos besoins en produits aquatiques</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-form">
-                    <h3>Demande de devis</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" name="name" required data-testid="input-name" placeholder="Votre nom et prénom">
-                            <div class="error-message" id="name-error"></div>
+                <div class="map-section">
+                    <h3>Nos implantations</h3>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Carte interactive Google Maps</p>
+                            <small
+                                >Visualisez nos 3 agences en Afrique de
+                                l'Ouest</small
+                            >
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required data-testid="input-email" placeholder="votre@email.com">
-                            <div class="error-message" id="email-error"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" data-testid="input-phone" placeholder="+XXX XX XX XX XX">
-                            <div class="error-message" id="phone-error"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="productType">Type de produit *</label>
-                            <select id="productType" name="productType" required data-testid="select-product-type">
-                                <option value="">Sélectionnez un type de produit</option>
-                                <option value="poissons-nobles">Poissons nobles</option>
-                                <option value="crustaces-coquillages">Crustacés & Coquillages</option>
-                                <option value="equipements-aquacoles">Équipements aquacoles</option>
-                                <option value="services-logistiques">Services logistiques</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                            <div class="error-message" id="productType-error"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="4" required data-testid="textarea-message" placeholder="Décrivez vos besoins..."></textarea>
-                            <div class="error-message" id="message-error"></div>
-                        </div>
-                        
-                        <button type="submit" class="btn-primary" data-testid="button-submit-contact">
-                            <span class="button-text">Envoyer la demande</span>
-                            <span class="button-loading" style="display: none;">Envoi en cours...</span>
-                        </button>
-                    </form>
+                    </div>
                 </div>
-                
-                <div class="contact-info">
-                    <h3>Coordonnées</h3>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+            </div>
+        </section>
+
+        <!-- Section Partenaires & Références -->
+        <section id="partenaires" class="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Partenaires & Références</h2>
+                    <p>
+                        Un réseau scientifique et industriel consolidé pour
+                        garantir notre excellence
+                    </p>
+                </div>
+
+                <div class="partners-section">
+                    <h3>Nos partenaires scientifiques</h3>
+                    <div class="partners-grid">
+                        <div class="partner-logo" data-testid="partner-0">
+                            Université de Côte d'Ivoire
                         </div>
-                        <div class="contact-details">
-                            <h4>Téléphone</h4>
-                            <p>+229 XX XX XX XX (Cotonou)</p>
-                            <p>+225 XX XX XX XX (Abidjan)</p>
-                            <p>+228 XX XX XX XX (Lomé)</p>
+                        <div class="partner-logo" data-testid="partner-1">
+                            Université du Bénin
+                        </div>
+                        <div class="partner-logo" data-testid="partner-2">
+                            Université du Togo
+                        </div>
+                        <div class="partner-logo" data-testid="partner-3">
+                            Université de Montpellier
+                        </div>
+                        <div class="partner-logo" data-testid="partner-4">
+                            IRD Montpellier
+                        </div>
+                        <div class="partner-logo" data-testid="partner-5">
+                            INRA
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 data-testid="testimonial-name-0">
+                                    Dr. Pierre Kouassi
+                                </h4>
+                                <p data-testid="testimonial-title-0">
+                                    Université de Montpellier
+                                </p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>contact@comatra-fm.com</p>
-                            <p>commercial@comatra-fm.com</p>
+                        <p data-testid="testimonial-content-0">
+                            "COMATRA FISH MARINE démontre une expertise
+                            remarquable en aquaculture durable. Leur approche
+                            scientifique rigoureuse et leur engagement
+                            environnemental en font un partenaire de choix pour
+                            nos projets de recherche."
+                        </p>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 data-testid="testimonial-name-1">
+                                    Marie Adjovi
+                                </h4>
+                                <p data-testid="testimonial-title-1">
+                                    Directrice - Restaurants Neptune
+                                </p>
+                            </div>
+                        </div>
+                        <p data-testid="testimonial-content-1">
+                            "La qualité des produits CFM est exceptionnelle.
+                            Leurs poissons nobles et crustacés répondent
+                            parfaitement aux exigences de notre clientèle haut
+                            de gamme. Un service logistique impeccable!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <div class="achievement">
+                        <div
+                            class="achievement-number"
+                            data-testid="achievement-value-0">
+                            15+
+                        </div>
+                        <div
+                            class="achievement-label"
+                            data-testid="achievement-label-0">
+                            Partenaires scientifiques
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
+                    <div class="achievement">
+                        <div
+                            class="achievement-number"
+                            data-testid="achievement-value-1">
+                            50+
                         </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <p>+229 XX XX XX XX</p>
+                        <div
+                            class="achievement-label"
+                            data-testid="achievement-label-1">
+                            Clients professionnels
                         </div>
                     </div>
-                    
-                    <div class="social-media">
-                        <h3>Suivez-nous</h3>
-                        <div class="social-links">
-                            <a href="#" data-testid="social-twitter" aria-label="Twitter">
+                    <div class="achievement">
+                        <div
+                            class="achievement-number"
+                            data-testid="achievement-value-2">
+                            5
+                        </div>
+                        <div
+                            class="achievement-label"
+                            data-testid="achievement-label-2">
+                            Sites aquacoles
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div
+                            class="achievement-number"
+                            data-testid="achievement-value-3">
+                            100%
+                        </div>
+                        <div
+                            class="achievement-label"
+                            data-testid="achievement-label-3">
+                            Qualité garantie
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nous contacter</h2>
+                    <p>
+                        Prenez contact avec nos équipes pour vos projets
+                        d'aquaculture et vos besoins en produits aquatiques
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <h3>Demande de devis</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    data-testid="input-name"
+                                    placeholder="Votre nom et prénom" />
+                                <div
+                                    class="error-message"
+                                    id="name-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    data-testid="input-email"
+                                    placeholder="votre@email.com" />
+                                <div
+                                    class="error-message"
+                                    id="email-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    data-testid="input-phone"
+                                    placeholder="+XXX XX XX XX XX" />
+                                <div
+                                    class="error-message"
+                                    id="phone-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productType"
+                                    >Type de produit *</label
+                                >
+                                <select
+                                    id="productType"
+                                    name="productType"
+                                    required
+                                    data-testid="select-product-type">
+                                    <option value="">
+                                        Sélectionnez un type de produit
+                                    </option>
+                                    <option value="poissons-nobles">
+                                        Poissons nobles
+                                    </option>
+                                    <option value="crustaces-coquillages">
+                                        Crustacés & Coquillages
+                                    </option>
+                                    <option value="equipements-aquacoles">
+                                        Équipements aquacoles
+                                    </option>
+                                    <option value="services-logistiques">
+                                        Services logistiques
+                                    </option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <div
+                                    class="error-message"
+                                    id="productType-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                    required
+                                    data-testid="textarea-message"
+                                    placeholder="Décrivez vos besoins..."></textarea>
+                                <div
+                                    class="error-message"
+                                    id="message-error"></div>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn-primary"
+                                data-testid="button-submit-contact">
+                                <span class="button-text"
+                                    >Envoyer la demande</span
+                                >
+                                <span
+                                    class="button-loading"
+                                    style="display: none"
+                                    >Envoi en cours...</span
+                                >
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Coordonnées</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Téléphone</h4>
+                                <p>+229 XX XX XX XX (Cotonou)</p>
+                                <p>+225 XX XX XX XX (Abidjan)</p>
+                                <p>+228 XX XX XX XX (Lomé)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>contact@comatra-fm.com</p>
+                                <p>commercial@comatra-fm.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+229 XX XX XX XX</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h3>Suivez-nous</h3>
+                            <div class="social-links">
+                                <a
+                                    href="#"
+                                    data-testid="social-twitter"
+                                    aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    data-testid="social-facebook"
+                                    aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    data-testid="social-linkedin"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="business-hours">
+                            <h3>Horaires d'ouverture</h3>
+                            <div class="hours-item">
+                                <span>Lundi - Vendredi</span>
+                                <span data-testid="hours-0">7h00 - 18h00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Samedi</span>
+                                <span data-testid="hours-1">7h00 - 13h00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Dimanche</span>
+                                <span data-testid="hours-2">Fermé</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img
+                                src="image/logo.png"
+                                alt="COMATRA FISH MARINE Logo"
+                                class="logo-image" />
+                            <div class="logo-subtitle">COMATRA FISH MARINE</div>
+                        </div>
+                        <p>
+                            Acteur clé de la pêche durable, aquaculture
+                            innovante et distribution de produits aquatiques en
+                            Côte d'Ivoire, Bénin, Togo. Plus de 10 ans
+                            d'expertise au service de l'alimentation halieutique
+                            saine.
+                        </p>
+                        <div class="copyright">
+                            © 2024 COMATRA FISH MARINE. Tous droits réservés.
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Liens rapides</h4>
+                        <ul>
+                            <li>
+                                <a
+                                    href="#accueil"
+                                    data-testid="footer-link-accueil"
+                                    >Accueil</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#apropos"
+                                    data-testid="footer-link-apropos"
+                                    >À propos</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#produits"
+                                    data-testid="footer-link-produits"
+                                    >Produits</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#agences"
+                                    data-testid="footer-link-agences"
+                                    >Nos agences</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#partenaires"
+                                    data-testid="footer-link-partenaires"
+                                    >Partenaires</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    data-testid="footer-link-contact"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <div class="footer-contact">
+                            <p>
+                                <strong>Email:</strong
+                                ><br />contact@comatra-fm.com
+                            </p>
+                            <p>
+                                <strong>Téléphone:</strong><br />+229 XX XX XX
+                                XX
+                            </p>
+                            <p>
+                                <strong>WhatsApp:</strong><br />+229 XX XX XX XX
+                            </p>
+                        </div>
+
+                        <div class="footer-social">
+                            <a
+                                href="#"
+                                data-testid="footer-social-twitter"
+                                aria-label="Twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" data-testid="social-facebook" aria-label="Facebook">
+                            <a
+                                href="#"
+                                data-testid="footer-social-facebook"
+                                aria-label="Facebook">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="#" data-testid="social-linkedin" aria-label="LinkedIn">
+                            <a
+                                href="#"
+                                data-testid="footer-social-linkedin"
+                                aria-label="LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="business-hours">
-                        <h3>Horaires d'ouverture</h3>
-                        <div class="hours-item">
-                            <span>Lundi - Vendredi</span>
-                            <span data-testid="hours-0">7h00 - 18h00</span>
-                        </div>
-                        <div class="hours-item">
-                            <span>Samedi</span>
-                            <span data-testid="hours-1">7h00 - 13h00</span>
-                        </div>
-                        <div class="hours-item">
-                            <span>Dimanche</span>
-                            <span data-testid="hours-2">Fermé</span>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="image/logo.png" alt="COMATRA FISH MARINE Logo" class="logo-image">
-                        <div class="logo-subtitle">COMATRA FISH MARINE</div>
-                    </div>
-                    <p>Acteur clé de la pêche durable, aquaculture innovante et distribution de produits aquatiques en Côte d'Ivoire, Bénin, Togo. Plus de 10 ans d'expertise au service de l'alimentation halieutique saine.</p>
-                    <div class="copyright">© 2024 COMATRA FISH MARINE. Tous droits réservés.</div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Liens rapides</h4>
-                    <ul>
-                        <li><a href="#accueil" data-testid="footer-link-accueil">Accueil</a></li>
-                        <li><a href="#apropos" data-testid="footer-link-apropos">À propos</a></li>
-                        <li><a href="#produits" data-testid="footer-link-produits">Produits</a></li>
-                        <li><a href="#agences" data-testid="footer-link-agences">Nos agences</a></li>
-                        <li><a href="#partenaires" data-testid="footer-link-partenaires">Partenaires</a></li>
-                        <li><a href="#contact" data-testid="footer-link-contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <div class="footer-contact">
-                        <p><strong>Email:</strong><br>contact@comatra-fm.com</p>
-                        <p><strong>Téléphone:</strong><br>+229 XX XX XX XX</p>
-                        <p><strong>WhatsApp:</strong><br>+229 XX XX XX XX</p>
-                    </div>
-                    
-                    <div class="footer-social">
-                        <a href="#" data-testid="footer-social-twitter" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" data-testid="footer-social-facebook" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" data-testid="footer-social-linkedin" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
 </html>
