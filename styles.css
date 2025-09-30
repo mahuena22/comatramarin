@@ -184,7 +184,7 @@ h6 {
 .bar {
     width: 25px;
     height: 3px;
-    background: var(--dark-gray);
+    background: var(--white);
     margin: 3px 0;
     transition: 0.3s;
 }
