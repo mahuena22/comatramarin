@@ -466,37 +466,48 @@
                 <div class="section-header">
                     <h2>Nos agences</h2>
                     <p>
-                        Présents dans 3 pays d'Afrique de l'Ouest pour vous
+                        Présents en France et dans 3 pays d'Afrique de l'Ouest pour vous
                         servir au plus près
                     </p>
                 </div>
-                <div class="agency1-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
-                        alt="Cotonou port area"
-                        data-testid="img-agency-cotonou" />
-                    <h3>Cotonou, Bénin</h3>
-                    <div class="agency-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Adresse:</strong><br />
-                                Zone Portuaire de Cotonou<br />
-                                Avenue Jean-Paul II
+
+                <!-- Siège Administratif - France (centré) -->
+                <div class="headquarters-wrapper">
+                    <div class="agency-card headquarters">
+                        <img
+                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
+                            alt="Paris France headquarters"
+                            data-testid="img-agency-france" />
+                        <h3>Siège Administratif - France</h3>
+                        <div class="agency-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Adresse:</strong><br />
+                                    Paris, France<br />
+                                    Centre d'affaires
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span data-testid="phone-cotonou"
-                                >+229 XX XX XX XX</span
-                            >
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span data-testid="phone-france"
+                                    >+33 X XX XX XX XX</span
+                                >
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Ven: 9h-17h</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Titre pour les départements -->
+                <div class="departments-title">
+                    <h3>NOS DEPARTEMENTS</h3>
+                </div>
+
+                <!-- Départements - Afrique de l'Ouest -->
                 <div class="agencies-grid">
                     <div class="agency-card">
                         <img
@@ -529,34 +540,6 @@
                     <div class="agency-card">
                         <img
                             src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
-                            alt="Abidjan port area"
-                            data-testid="img-agency-abidjan" />
-                        <h3>Abidjan, Côte d'Ivoire</h3>
-                        <div class="agency-info">
-                            <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <strong>Adresse:</strong><br />
-                                    Zone Industrielle de Vridi<br />
-                                    Boulevard VGE
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-phone"></i>
-                                <span data-testid="phone-abidjan"
-                                    >+225 XX XX XX XX</span
-                                >
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-clock"></i>
-                                <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="agency-card">
-                        <img
-                            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
                             alt="Lomé port area"
                             data-testid="img-agency-lomé" />
                         <h3>Lomé, Togo</h3>
@@ -573,6 +556,34 @@
                                 <i class="fas fa-phone"></i>
                                 <span data-testid="phone-lomé"
                                     >+228 XX XX XX XX</span
+                                >
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Ven: 7h-18h, Sam: 7h-13h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agency-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200"
+                            alt="Abidjan port area"
+                            data-testid="img-agency-abidjan" />
+                        <h3>Abidjan, Côte d'Ivoire</h3>
+                        <div class="agency-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Adresse:</strong><br />
+                                    Zone Industrielle de Vridi<br />
+                                    Boulevard VGE
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span data-testid="phone-abidjan"
+                                    >+225 XX XX XX XX</span
                                 >
                             </div>
                             <div class="info-item">
