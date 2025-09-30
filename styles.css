@@ -807,11 +807,19 @@ section {
 
 /* Products Section */
 .products {
-    background: linear-gradient(
-        to right,
-        var(--cfm-very-light-cyan) 0%,
-        var(--cfm-light-cyan) 100%
-    );
+    background: linear-gradient(rgba(1, 53, 109, 0.7), rgba(1, 108, 165, 0.6)),
+        url('image/back-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.products .section-header h2 {
+    color: var(--white);
+}
+
+.products .section-header p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .product-categories {
@@ -871,7 +879,7 @@ section {
 
 .services h3 {
     font-size: 2rem;
-    color: var(--cfm-dark-blue);
+    color: var(--white);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -917,11 +925,16 @@ section {
 .gallery {
     padding: 40px 0;
     overflow: hidden;
+    background: linear-gradient(rgba(1, 53, 109, 0.7), rgba(1, 108, 165, 0.6)),
+        url('image/back-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .gallery h3 {
     font-size: 2rem;
-    color: var(--cfm-dark-blue);
+    color: var(--white);
     text-align: center;
     margin-bottom: 40px;
 }
@@ -1183,11 +1196,19 @@ section {
 
 /* Partners Section */
 .partners {
-    background: linear-gradient(
-        to right,
-        var(--cfm-very-light-cyan) 0%,
-        var(--cfm-light-cyan) 100%
-    );
+    background: linear-gradient(rgba(1, 53, 109, 0.7), rgba(1, 108, 165, 0.6)),
+        url('image/back-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.partners .section-header h2 {
+    color: var(--white);
+}
+
+.partners .section-header p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .partners-section {
