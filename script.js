@@ -491,6 +491,26 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Connexion perdue');
     });
     
+    // ===== FAQ ACCORDÉON =====
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Fermer tous les autres accordéons
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Ouvrir celui-ci s'il n'était pas actif
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+    
     // ===== INITIALISATION FINALE =====
     console.log('COMATRA FISH MARINE - Site initialisé avec succès');
     

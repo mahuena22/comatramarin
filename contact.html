@@ -122,10 +122,9 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Siège social - Cotonou</h4>
-                            <p>Zone Portuaire de Cotonou</p>
-                            <p>Avenue Jean-Paul II</p>
-                            <p>Cotonou, Bénin</p>
+                            <h4>Siège Administratif - France</h4>
+                            <p>Paris, France</p>
+                            <p>Centre d'affaires</p>
                         </div>
                     </div>
                     
@@ -135,7 +134,8 @@
                         </div>
                         <div class="contact-details">
                             <h4>Téléphone</h4>
-                            <p data-testid="phone-main">+229 XX XX XX XX</p>
+                            <p data-testid="phone-main">+33 X XX XX XX XX (France)</p>
+                            <p>+229 XX XX XX XX (Cotonou)</p>
                             <p>+225 XX XX XX XX (Abidjan)</p>
                             <p>+228 XX XX XX XX (Lomé)</p>
                         </div>
@@ -184,7 +184,38 @@
         <div class="container">
             <div class="section-header">
                 <h2>Nos agences</h2>
-                <p>Présents dans 3 pays d'Afrique de l'Ouest pour vous servir au plus près</p>
+                <p>Présents en France et dans 3 pays d'Afrique de l'Ouest pour vous servir au plus près</p>
+            </div>
+            
+            <div class="headquarters-wrapper">
+                <div class="agency-card headquarters">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" 
+                         alt="Paris France headquarters" 
+                         data-testid="img-agency-france">
+                    <h3>Siège Administratif - France</h3>
+                    <div class="agency-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Adresse:</strong><br>
+                                Paris, France<br>
+                                Centre d'affaires
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-testid="phone-france">+33 X XX XX XX XX</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 9h-17h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="departments-title">
+                <h3>NOS DÉPARTEMENTS</h3>
             </div>
             
             <div class="agencies-grid">
@@ -274,25 +305,45 @@
                 <p>Réponses aux questions les plus courantes</p>
             </div>
             
-            <div class="faq-grid">
+            <div class="faq-accordion">
                 <div class="faq-item">
-                    <h4>Quels sont vos délais de livraison ?</h4>
-                    <p>Nos délais de livraison varient selon la destination : 24h pour Cotonou, 48h pour Abidjan et Lomé, 72h pour les autres villes.</p>
+                    <div class="faq-question">
+                        <h4>Quels sont vos délais de livraison ?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos délais de livraison varient selon la destination : 24h pour Cotonou, 48h pour Abidjan et Lomé, 72h pour les autres villes.</p>
+                    </div>
                 </div>
                 
                 <div class="faq-item">
-                    <h4>Proposez-vous des contrats d'approvisionnement ?</h4>
-                    <p>Oui, nous proposons des contrats d'approvisionnement régulier adaptés aux besoins des restaurants, grossistes et transformateurs.</p>
+                    <div class="faq-question">
+                        <h4>Proposez-vous des contrats d'approvisionnement ?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons des contrats d'approvisionnement régulier adaptés aux besoins des restaurants, grossistes et transformateurs.</p>
+                    </div>
                 </div>
                 
                 <div class="faq-item">
-                    <h4>Vos produits sont-ils certifiés ?</h4>
-                    <p>Tous nos produits respectent les normes internationales de qualité et de sécurité alimentaire. Nous fournissons les certificats sur demande.</p>
+                    <div class="faq-question">
+                        <h4>Vos produits sont-ils certifiés ?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tous nos produits respectent les normes internationales de qualité et de sécurité alimentaire. Nous fournissons les certificats sur demande.</p>
+                    </div>
                 </div>
                 
                 <div class="faq-item">
-                    <h4>Acceptez-vous les commandes en petite quantité ?</h4>
-                    <p>Oui, nous acceptons les commandes à partir de 10kg pour les produits frais et proposons des solutions adaptées aux petits restaurateurs.</p>
+                    <div class="faq-question">
+                        <h4>Acceptez-vous les commandes en petite quantité ?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous acceptons les commandes à partir de 10kg pour les produits frais et proposons des solutions adaptées aux petits restaurateurs.</p>
+                    </div>
                 </div>
             </div>
         </div>
