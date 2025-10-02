@@ -997,8 +997,8 @@ section {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    animation: slideShow 40s linear infinite;
-    width: calc(400px * 30 + 15px * 29); /* 30 images + 29 gaps pour effet infini */
+    animation: slideShow 60s linear infinite;
+    will-change: transform;
 }
 
 .gallery-track img {
@@ -1024,7 +1024,7 @@ section {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-400px * 15 - 15px * 14)); /* Défilement de 15 images + 14 gaps */
+        transform: translateX(calc(-415px * 15)); /* Défilement de 15 images (400px + 15px gap) */
     }
 }
 
@@ -1045,8 +1045,8 @@ section {
     }
 
     .gallery-track {
-        animation: slideShowMobile 35s linear infinite;
-        width: calc(280px * 30 + 15px * 29);
+        animation: slideShowMobile 50s linear infinite;
+        will-change: transform;
     }
 
     @keyframes slideShowMobile {
@@ -1054,7 +1054,7 @@ section {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(calc(-280px * 15 - 15px * 14));
+            transform: translateX(calc(-295px * 15)); /* 280px + 15px gap */
         }
     }
 
@@ -1076,8 +1076,8 @@ section {
     }
 
     .gallery-track {
-        animation: slideShowSmall 30s linear infinite;
-        width: calc(250px * 30 + 15px * 29);
+        animation: slideShowSmall 45s linear infinite;
+        will-change: transform;
     }
 
     @keyframes slideShowSmall {
@@ -1085,7 +1085,7 @@ section {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(calc(-250px * 15 - 15px * 14));
+            transform: translateX(calc(-265px * 15)); /* 250px + 15px gap */
         }
     }
 

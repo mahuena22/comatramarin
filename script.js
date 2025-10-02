@@ -111,52 +111,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ===== SLIDER GALERIE =====
-    const gallerySlider = document.querySelector('.gallery-slider');
-    const galleryTrack = document.querySelector('.gallery-track');
-    
-    if (gallerySlider && galleryTrack) {
-        let isScrolling = false;
-        
-        // Auto-scroll de la galerie
-        function autoScrollGallery() {
-            if (!isScrolling) {
-                const scrollWidth = gallerySlider.scrollWidth;
-                const clientWidth = gallerySlider.clientWidth;
-                
-                if (gallerySlider.scrollLeft >= scrollWidth - clientWidth) {
-                    gallerySlider.scrollTo({ left: 0, behavior: 'smooth' });
-                } else {
-                    gallerySlider.scrollBy({ left: 415, behavior: 'smooth' });
-                }
-            }
-        }
-        
-        // Auto-scroll toutes les 4 secondes
-        let galleryInterval = setInterval(autoScrollGallery, 4000);
-        
-        // Pause l'auto-scroll au hover
-        gallerySlider.addEventListener('mouseenter', function() {
-            clearInterval(galleryInterval);
-            isScrolling = true;
-        });
-        
-        gallerySlider.addEventListener('mouseleave', function() {
-            isScrolling = false;
-            galleryInterval = setInterval(autoScrollGallery, 4000);
-        });
-        
-        // Arrêter l'auto-scroll si l'utilisateur scroll manuellement
-        gallerySlider.addEventListener('scroll', function() {
-            if (!isScrolling) {
-                clearInterval(galleryInterval);
-                setTimeout(() => {
-                    if (!isScrolling) {
-                        galleryInterval = setInterval(autoScrollGallery, 4000);
-                    }
-                }, 3000);
-            }
-        });
-    }
+    // La galerie utilise une animation CSS infinie pour un défilement continu
+    // L'animation se met en pause automatiquement au survol via CSS
     
     // ===== FORMULAIRE DE CONTACT =====
     const contactForm = document.getElementById('contactForm');
