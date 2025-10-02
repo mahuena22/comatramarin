@@ -34,11 +34,28 @@ A complete website for COMATRA FISH MARINE, a sustainable aquaculture and fishin
 - No external dependencies (vanilla JavaScript)
 - Configured for Replit proxy/iframe environment
 
-## Recent Changes
-- Created package.json for Node.js project structure
-- Configured COMATRA Server workflow for port 5000
-- Set up autoscale deployment configuration
-- Verified all functionality working correctly
+## Recent Changes (October 2025)
+
+### Products Page (produits.html)
+- Added extensive photo gallery with 30 images (matching home page style)
+- Removed double bullet points from service lists
+- Enhanced responsive design
+
+### Contact Page (contact.html)
+- Styled submit button with gradient background and hover effects
+- Updated contact information to display France headquarters
+- Added France administrative headquarters to agencies section
+- Transformed FAQ section into interactive accordions with smooth animations
+
+### Home Page (index.html)
+- Removed African universities from partners section (Université de Côte d'Ivoire, Université du Bénin, Université du Togo)
+- Transformed partners section from grid layout to descriptive paragraph format
+- Enhanced partner presentation with professional text highlighting Université de Montpellier, IRD Montpellier, and INRA
+
+### Technical Updates
+- Added FAQ accordion JavaScript functionality in script.js
+- Enhanced CSS with accordion animations and submit button styling
+- Improved overall responsive design across all pages
 
 ## Deployment Configuration
 - Target: Autoscale (stateless website)
