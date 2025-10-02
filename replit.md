@@ -40,6 +40,9 @@ A complete website for COMATRA FISH MARINE, a sustainable aquaculture and fishin
 - Added extensive photo gallery with 30 images (matching home page style)
 - Removed double bullet points from service lists
 - Enhanced responsive design
+- **Gallery vertical scrolling**: Changed from horizontal to vertical infinite scroll animation
+- **Infinite scroll**: Properly implemented seamless loop with 15 original + 15 duplicate images
+- **Mobile icon centering**: Card and service icons are now centered on mobile devices
 
 ### Contact Page (contact.html)
 - Styled submit button with gradient background and hover effects
@@ -56,6 +59,8 @@ A complete website for COMATRA FISH MARINE, a sustainable aquaculture and fishin
 - Added FAQ accordion JavaScript functionality in script.js
 - Enhanced CSS with accordion animations and submit button styling
 - Improved overall responsive design across all pages
+- Fixed gallery animation calculations for seamless vertical infinite scroll
+- Added mobile-specific CSS for centered icons on cards and services
 
 ## Deployment Configuration
 - Target: Autoscale (stateless website)
