@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (gallerySlider.scrollLeft >= scrollWidth - clientWidth) {
                     gallerySlider.scrollTo({ left: 0, behavior: 'smooth' });
                 } else {
-                    gallerySlider.scrollBy({ left: 340, behavior: 'smooth' });
+                    gallerySlider.scrollBy({ left: 415, behavior: 'smooth' });
                 }
             }
         }

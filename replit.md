@@ -36,11 +36,17 @@ A complete website for COMATRA FISH MARINE, a sustainable aquaculture and fishin
 
 ## Recent Changes (October 2025)
 
+### Gallery Update (October 2, 2025)
+- **Gallery horizontal scrolling**: Changed gallery to scroll horizontally (user request)
+- Updated CSS animations to use translateX instead of translateY
+- Adjusted image dimensions: 400px width x 280px height on desktop
+- Responsive breakpoints updated for horizontal scroll on mobile
+- JavaScript auto-scroll updated to 415px increments (image width + gap)
+
 ### Products Page (produits.html)
 - Added extensive photo gallery with 30 images (matching home page style)
 - Removed double bullet points from service lists
 - Enhanced responsive design
-- **Gallery vertical scrolling**: Changed from horizontal to vertical infinite scroll animation
 - **Infinite scroll**: Properly implemented seamless loop with 15 original + 15 duplicate images
 - **Mobile icon centering**: Card and service icons are now centered on mobile devices
 
