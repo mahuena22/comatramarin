@@ -43,6 +43,12 @@ A complete website for COMATRA FISH MARINE, a sustainable aquaculture and fishin
 - Responsive breakpoints updated for horizontal scroll on mobile
 - JavaScript auto-scroll updated to 415px increments (image width + gap)
 
+### Mobile Responsive Fix (October 2, 2025)
+- **Products page mobile fix**: Fixed horizontal scroll issue on mobile
+- Added responsive grid for `.product-grid` on mobile (single column layout)
+- Added `overflow-x: hidden` on body and containers to prevent unwanted horizontal scroll
+- Ensured all content fits properly within mobile viewport
+
 ### Products Page (produits.html)
 - Added extensive photo gallery with 30 images (matching home page style)
 - Removed double bullet points from service lists

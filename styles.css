@@ -1741,6 +1741,15 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1874,11 +1883,22 @@ section {
     .achievements {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         padding: 0 15px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .nav-container {
@@ -1919,5 +1939,10 @@ section {
 
     .achievements {
         grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
