@@ -1276,6 +1276,23 @@ section {
     gap: 20px;
 }
 
+.partners-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.partners-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray);
+    text-align: center;
+}
+
+.partners-text strong {
+    color: var(--cfm-dark-blue);
+    font-weight: 600;
+}
+
 .partner-logo {
     background: var(--light-gray);
     padding: 20px;
