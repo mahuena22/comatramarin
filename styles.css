@@ -192,7 +192,7 @@ h6 {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(1, 53, 109, 0.7), rgba(1, 108, 165, 0.6)),
-        url('image/back-hero.jpg');
+        url('image/hero-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

@@ -52,6 +52,10 @@ A complete website for COMATRA FISH MARINE, a sustainable aquaculture and fishin
 - Added `overflow-x: hidden` on body and containers to prevent unwanted horizontal scroll
 - Ensured all content fits properly within mobile viewport
 
+### Hero Section Updates (October 2, 2025)
+- **Button change**: Replaced "Demander un devis" with "En Savoir Plus" linking to À propos page
+- **New background image**: Updated hero background with custom maritime image (hero-background.jpg)
+
 ### Products Page (produits.html)
 - Added extensive photo gallery with 30 images (matching home page style)
 - Removed double bullet points from service lists
